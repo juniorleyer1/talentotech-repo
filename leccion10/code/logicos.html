@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo operadores logicos</title>
+</head>
+<body>
+    <h1>Ejemplo de uso de los operadores logicos concatenacion</h1>
+    <script>
+        let esMayorDedad = true;
+        let tieneLicencia = false;
+        let puedeConducir = esMayorDedad&&tieneLicencia;
+    </script>
+    <div>
+        <script>
+            document.write("Es mayor de edad("+ esMayorDedad +"), tiene licencia (" + tieneLicencia +")" );
+        </script>
+    </div>
+    <h2>Operadores logicos: </h2>
+    <div>
+        <script>
+            let mensaje = "Hola.";
+            mensaje +=  `puedes conducir: ${puedeConducir}`;
+            document.write(mensaje);
+        </script>
+    </div>
+
+</body>
+</html>

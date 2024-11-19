@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio sesion 5 - formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header></header>
+    <nav></nav>
+    <section class="container-form">
+        <h1 class="titulo-form">Formulario registro de usuario</h1>
+        <form action="" method="">
+            <label for="nombre" >* Nombre: </label>
+            <input type="text" name="nombre" id="nombre" placeholder="nombre" required>
+            <br>
+            <label for="email">* Email: </label>
+            <input type="email" name="email" id="email" placeholder="email@domain.com" required>
+            <br>
+            <label for="Telefono">Telefono: </label>
+            <input type="tel" name="Telefono" id="Telefono" placeholder="Telefono ">
+            <br>
+            <label for="fechanac">* Fecha de nacimiento: </label>
+            <input type="date" name="fechanac" id="fechanac" required>
+            <br>
+            <label for="edad" p>* Edad: </label>
+            <input type="number" name="edad" id="edad" placeholder="Edad" required>
+            <br>
+            <label for="">Nivel de escolaridad: </label>
+            <select name="escolaridad" id="escolaridad">
+                <option value="0" selected="" disabled="">Selecciona</option>
+                <option value="1">Primaria</option>
+                <option value="2">Bachillerato</option>
+                <option value="3">Pregrado</option>
+                <option value="4">Especializacion</option>
+                <option value="5">Mestria</option>
+                <option value="6">Doctorado</option>
+            </select>
+            <br>
+            <label for="Comentarios">Comentarios: </label>
+            <br>
+            <textarea name="Comentarios" id="Comentarios" rows="4" placeholder="Escribe tus comentarios..."></textarea>
+            <br>
+            <fieldset>
+                <legend>Credenciales de acceso</legend>
+                <label for="username">Usuario: </label>
+                <input type="text" name="username" id="username" required="" pattern="[A-Z]{3}" placeholder="AAA">
+                <br>
+                <label for="password">Contraseña: </label>
+                <input type="password" name="password" id="password" required minlength="8" maxlength="16" >
+            </fieldset>
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Cancelar">
+        </form>
+    </section>
+    <footer></footer>
+</body>
+
+</html>
